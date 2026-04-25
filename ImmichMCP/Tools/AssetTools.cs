@@ -176,7 +176,7 @@ public static class AssetTools
     }
 
     [McpServerTool(Name = "immich_assets_upload")]
-    [Description("Upload a new asset from base64-encoded content. For large files, use immich.assets.upload_from_path instead.")]
+    [Description("Upload a new asset from base64-encoded content. For large files, use immich_assets_upload_from_path instead.")]
     public static async Task<string> Upload(
         ImmichClient client,
         [Description("Base64-encoded file content")] string fileContent,
@@ -235,7 +235,7 @@ public static class AssetTools
     }
 
     [McpServerTool(Name = "immich_assets_upload_from_path")]
-    [Description("Upload an asset from a file path accessible to the MCP server. NOTE: Only works when the MCP server can access the path (e.g., stdio mode or shared filesystem). For remote HTTP mode, use immich.assets.upload with base64 content instead.")]
+    [Description("Upload an asset from a file path accessible to the MCP server. NOTE: Only works when the MCP server can access the path (e.g., stdio mode or shared filesystem). For remote HTTP mode, use immich_assets_upload with base64 content instead.")]
     public static async Task<string> UploadFromPath(
         ImmichClient client,
         [Description("Absolute path to the file to upload")] string filePath,

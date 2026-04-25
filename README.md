@@ -114,6 +114,8 @@ Or with Docker:
 | `immich_assets_download_thumbnail` | Get thumbnail/preview URLs |
 | `immich_assets_upload` | Upload asset (base64) |
 | `immich_assets_upload_from_path` | Upload from local file path |
+| `immich_assets_upload_init` | Initialize out-of-band file upload |
+| `immich_assets_upload_status` | Check status of an upload session |
 | `immich_assets_update` | Update asset metadata |
 | `immich_assets_bulk_update` | Bulk update multiple assets |
 | `immich_assets_delete` | Delete asset(s) |
